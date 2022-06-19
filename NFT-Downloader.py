@@ -9,6 +9,7 @@ from os.path import *
 import os
 import requests
 import random
+import sys
 os.system('cls' if os.name == 'nt' else 'clear')
 cryptopunks = "http://cryptopunks.app/cryptopunks/cryptopunk" #0-9999
 meebits = "http://images.meebits.app/meebitimages/" #00001-10000 
@@ -78,5 +79,5 @@ try:
                 f.close()
                 print("Downloaded "+str(i)+ext)
 except Exception as e:
-    print(e)
+    sys.exit(1)
 

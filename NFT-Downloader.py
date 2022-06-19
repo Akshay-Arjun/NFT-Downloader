@@ -15,6 +15,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 cryptopunks = "http://cryptopunks.app/cryptopunks/cryptopunk" #0-9999
 meebits = "http://images.meebits.app/meebitimages/" #00001-10000 
 download = int(input("Choose option to download all NFT's \n 1. Cryptopunks <=10000 \n 2. Meebits <=10000 \n "))
+print("Note : Press CTRL+C to stop the program")
 if download == 1:
     name = "Cryptopunks"
     str1 = cryptopunks

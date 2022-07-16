@@ -2,7 +2,7 @@
 # Can Contact Here: https://bit.ly/AkshayArjun
 # Downloading NFTS DOESN'T make you the OWNER.
 # THE AUTHOR IS NOT RESPONSILE FOR ANY MISUSE OF THIS CODE.
-# BY USING THIS CODE YOU AGREE THAT YOU HAVE READ THESE COMMENTS AND UNDERSTOOD THAT THE AUTHOR DOESN'T HAVE ANY RESPONSIBLE FOR YOUR ACTIONS.
+# BY USING THIS CODE YOU AGREE THAT YOU HAVE READ THESE COMMENTS AND UNDERSTOOD THAT THE AUTHOR DOESN'T HAVE ANY RESPONSIBILITY FOR YOUR ACTIONS.
 # Any actions and or activities related to this script is solely your responsibility. The misuse of this toolkit can result in criminal charges brought against the persons in question. The contributors will not be held responsible in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
 # This toolkit contains materials that can be potentially damaging. Refer to the laws in your province/country before accessing, using,or in any other way utilizing this in a wrong way.
 # the comments are for user understanding. You can uncomment PRINT statements to check what's happening.

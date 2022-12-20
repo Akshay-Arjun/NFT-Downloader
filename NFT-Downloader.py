@@ -9,13 +9,12 @@
 from os.path import *
 import os
 import requests
-import random
 import sys
 os.system('cls' if os.name == 'nt' else 'clear')
 cryptopunks = "http://cryptopunks.app/cryptopunks/cryptopunk" #0-9999
 meebits = "http://images.meebits.app/meebitimages/" #00001-10000 
-download = int(input("Choose option to download all NFT's \n 1. Cryptopunks <=10000 \n 2. Meebits <=10000 \n "))
-print("Note : Press CTRL+C to stop the program")
+download = int(input("Choose option to download all NFT's \n 1. Cryptopunks <=10000 \n 2. Meebits <=10000 : "))
+print("\n Note : Press CTRL+C to stop the program")
 if download == 1:
     name = "Cryptopunks"
     str1 = cryptopunks
@@ -44,16 +43,6 @@ else :
     print("Wrong choice. Try again")
     exit()
 COUNT = int(input("Enter no.of images : "))
-# generating proxies
-# REQUEST API
-print(" Generating proxies to avoid ban")
-rhttps = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=https&timeout=10000&country=all&ssl=all&anonymity=all")
-# HTTPS
-https = []
-https = rhttps.text
-https = https.split()
-lines = len(https)
-print("Poxies generated")
 try:
     if download == 2:
         COUNT = COUNT+1
@@ -67,8 +56,7 @@ try:
             else:
                #print(path)
                 f = open(path,'wb')
-                proxy = https[random.choice([x for x in range(len(https))])]
-                r = requests.get(URL,proxies={'https':proxy})
+                r = requests.get(URL,timeout=10)
                 #r = requests.get(URL,headers=headers)
                 f.write(r.content)
                 f.close()
@@ -84,8 +72,7 @@ try:
             else:
                #print(path)
                 f = open(path,'wb')
-                proxy = https[random.choice([x for x in range(len(https))])]
-                r = requests.get(URL,proxies={'https':proxy})
+                r = requests.get(URL,timeout=10)
                 #print(r)
                 f.write(r.content)
                 f.close()
